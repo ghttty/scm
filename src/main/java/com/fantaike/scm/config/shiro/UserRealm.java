@@ -28,7 +28,6 @@ public class UserRealm extends AuthorizingRealm {
 //	private LoginService loginService;
 
 	@Override
-	@SuppressWarnings("unchecked")
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principals) {
 		Session session = SecurityUtils.getSubject().getSession();
 		JSONObject permission = (JSONObject) session.getAttribute(Constants.SESSION_USER_PERMISSION);

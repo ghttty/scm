@@ -9,6 +9,6 @@
     </resultMap>
 
     <select id="findAll"  resultMap="SysUserResultMap">
-        select * from s_use
+        select * from s_user
     </select>
 </mapper>
