@@ -47,7 +47,7 @@ public class UserRealm extends AuthorizingRealm {
 	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken authcToken) throws AuthenticationException {
 		String loginName = (String) authcToken.getPrincipal();
 		String password = new String((char[]) authcToken.getCredentials());
-		JSONObject user ;
+		JSONObject user = new JSONObject();
 				//= loginService.getUser(loginName, password);
 		if (user == null) {
 			//没找到帐号
